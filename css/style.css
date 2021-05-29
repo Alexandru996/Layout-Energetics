@@ -16,6 +16,7 @@ html,body {
 }
 
 .content-wrapper{
+    /* nu trebuie sa iti limitezi width-ul aici, din cauza asta meniul la mine trece pe 2 randuri, nu ne dorim asta */
     width:50%;
     height: 30px;   
 }
@@ -75,6 +76,8 @@ h2{
 
 .infos{
     width:50%;
+    /* ai foarte multe height-uri fixe, care au prioritate si depasesc acel 100% pe care il vrei din viewport. ceea ce se intampla, se creeaza scroll vertical, la care imaginea nu mai este spread-uita. iti atasez un recording */
+    /* dimensiunile fixe au prioritate asupra a ceea ce pui in % */
     height: 200px;
 }
 
